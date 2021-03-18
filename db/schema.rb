@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 2021_03_13_220804) do
   enable_extension "plpgsql"
 
   create_table "tweets", force: :cascade do |t|
+    t.string "profile"
     t.string "title"
     t.text "content"
     t.string "author"
